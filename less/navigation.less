@@ -1,1 +1,28 @@
 // Navigation code here
+.navBar{
+    box-sizing: border-box;
+    .center();
+    background-color:@nav-bg;
+    border-bottom: 1px @nav-border solid;
+    
+    .navTitle{
+        .center();
+        color:@nav-font;
+        font-size: 4rem;
+        margin: 10px 0 ;
+    }//closes navtitle
+    nav{
+        .cust-layout(center,center);
+        margin: 10px 0;
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color:@nav-font;
+        margin:0 20px ;
+        
+        &:hover {
+            color: lighten(@nav-font, 50%);
+        }
+        }      
+    }
+}// closes navBar
