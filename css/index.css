@@ -6,10 +6,10 @@
   cursor: pointer;
   outline: none;
   box-shadow: 0 9px #454A59;
-  border: none;
 }
 .btn-class:hover {
-  background-color: #353e5a;
+  background-color: white;
+  color: #22283A;
 }
 .btn-class:active {
   box-shadow: 0 5px #81848E;
@@ -251,12 +251,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-}
-.home .space-images img.sky,
-.home .space-images img.launch {
-  display: none;
-}
-@media (max-width: 500px) {
   .home .space-images img.sky,
   .home .space-images img.launch {
     display: none;
@@ -324,10 +318,10 @@ footer {
   cursor: pointer;
   outline: none;
   box-shadow: 0 9px #454A59;
-  border: none;
 }
 .home .walk .walk-text button:hover {
-  background-color: #353e5a;
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-text button:active {
   box-shadow: 0 5px #81848E;
