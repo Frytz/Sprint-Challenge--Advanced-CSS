@@ -305,7 +305,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text .child-btn {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -346,4 +346,81 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 8888;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 60%;
+  overflow: contain;
+}
+.modal .model-content {
+  background-color: #fefefe;
+  margin: 10vh auto;
+  padding: 5%;
+  border: 1px solid #888;
+  width: 40%;
+  height: max-content;
+}
+@media ( min-width: 1366px) {
+  .modal .model-content {
+    width: 30%;
+  }
+}
+.modal .model-content h2,
+.modal .model-content p {
+  margin: 0 0 5%;
+  font-weight: 400;
+  color: #666;
+}
+.modal form {
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #eee;
+}
+.modal form input,
+.modal form textarea {
+  width: calc(100%);
+  padding: 8px;
+  margin-bottom: 10%;
+  border: 1px solid #17A2B8;
+  outline: none;
+}
+.modal form .btn1 {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: #22283A;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 9px #454A59;
+}
+.modal form .btn1:hover {
+  background-color: white;
+  color: #22283A;
+}
+.modal form .btn1:active {
+  box-shadow: 0 5px #81848E;
+  transform: translateY(4px);
+}
+@media (max-width: 500px) {
+  .modal form .btn1 {
+    width: 50%;
+  }
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

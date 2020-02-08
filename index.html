@@ -61,20 +61,43 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          <button>Sign Up </button>
+          <button class="child-btn" data-modal="modalOne">Sign Up </button>
         </div>
       </div>
       
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
-
-    </section>
-
+  </section>
+  <!-- for sign in form -->
+  <div id= "modalOne" class="modal"><!-- parent-->
+    <div class="modal-content"><!--first child-->
+        <div class = "contact-form"><!--second child-->
+            <a class="close"><!--opens a child-->
+                &times;
+            </a><!--closes a child-->
+            <form action="/"><!--opens form-->
+            <h2>
+                Subcribe
+            </h2>
+            <div><!--opens third div child-->
+                <input class="fname" type="text" name="name" placeholder="Full name">
+                <input type="text" name="name" placeholder="Email">
+                <input type="text" name="name" placeholder="Phone number">
+                <input type="text" name="name" placeholder="City, State">
+            </div><!--closes third div child-->
+               
+                <button class="btn1" type="submit" href="#">Submit</button>
+            </form><!--closes form-->
+        </div><!--closes second child-->
+    </div><!--closes first child-->
+</div><!--closes parent-->
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
 
   </div>
+<!-- for sign in form -->
 </body>
+<script src="js/index.js"></script>
 </html>
